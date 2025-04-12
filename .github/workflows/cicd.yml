@@ -60,7 +60,7 @@ jobs:
       - name: Deploy to Server
         run: |
           ssh -o StrictHostKeyChecking=no user@root << EOF
-            cd /path/to/your-repo
+            cd /odoo-v18-ee
             git pull origin main
             sudo ./scripts/deploy.sh
           EOF
