@@ -59,7 +59,7 @@ jobs:
 
       - name: Deploy to Server
         run: |
-          ssh -o StrictHostKeyChecking=no user@${{ secrets.HOST_NAME }} << EOF
+          ssh -o StrictHostKeyChecking=no user@root << EOF
             cd /path/to/your-repo
             git pull origin main
             sudo ./scripts/deploy.sh
